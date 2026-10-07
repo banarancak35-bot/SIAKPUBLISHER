@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SIAK PUBLISHER - Mengabadikan Karya, Merawat Peradaban</title>
+  <meta name="description" content="Website resmi penerbit buku SIAK PUBLISHER. Layanan penerbitan naskah profesional, buku fiksi, non-fiksi, pendidikan, dan sastra ber-ISBN resmi." />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brandNavy: '#070d19',
+            brandCard: '#0b1426',
+            brandBorder: '#1b2a4a',
+            brandGold: '#d4af37',
+            brandGoldLight: '#fef08a'
+          },
+          fontFamily: {
+            serif: ['Georgia', 'serif'],
+            sans: ['system-ui', '-apple-system', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-[#070d19] text-slate-100 font-sans antialiased selection:bg-[#d4af37]/30 selection:text-white">
+
+  <!-- ================================================================= -->
+  <!-- 1. TOP BAR: INFORMASI KONTAK RESMI (EMAIL & NO HP / WHATSAPP)    -->
+  <!-- ================================================================= -->
+  <div class="bg-[#050a14] border-b border-[#1b2a4a] text-slate-300 text-xs py-2 px-4">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2">
+      <!-- Kontak Utama: Email & WhatsApp -->
+      <div class="flex items-center gap-4 sm:gap-6">
+        <a href="mailto:siakpublisher@gmail.com" class="hover:text-[#d4af37] transition-colors flex items-center gap-1.5" title="Kirim email">
+          <span>✉️</span>
+          <span class="font-medium">siakpublisher@gmail.com</span>
+        </a>
+        <span class="text-slate-600">|</span>
+        <a href="https://wa.me/6285271219108" target="_blank" class="hover:text-[#d4af37] transition-colors flex items-center gap-1.5 font-medium" title="Hubungi WhatsApp">
+          <span>📱</span>
+          <span>WhatsApp / HP: 085271219108</span>
+        </a>
+      </div>
+      <!-- Lokasi & Jam Operasional -->
+      <div class="text-slate-400 text-[11px]">
+        Senin - Sabtu: 08.30 - 17.00 WIB · Siak Sri Indrapura, Riau
+      </div>
+    </div>
+  </div>
+
+  <!-- ================================================================= -->
+  <!-- 2. HEADER: LOGO, MENU NAVIGASI, & AKSI                           -->
+  <!-- ================================================================= -->
+  <header class="sticky top-0 z-40 bg-[#091122]/95 backdrop-blur border-b border-[#1b2a4a] shadow-lg">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+      <div class="flex items-center justify-between h-20">
+        <!-- Logo & Identitas Brand -->
+        <a href="#beranda" class="flex items-center gap-3 group">
+          <svg viewBox="0 0 200 130" fill="none" class="w-11 h-auto" xmlns="http://www.w3.org/2000/svg">
+            <!-- Crown -->
+            <rect x="74" y="38" width="52" height="4" rx="1" fill="#d4af37" />
+            <path d="M70 36L65 18L85 28L100 8L115 28L135 18L130 36H70Z" fill="#d4af37" />
+            <path d="M82 34L100 16L118 34H82Z" fill="#070d19" />
+            <path d="M100 20L108 32H92L100 20Z" fill="#f5d468" />
+            <circle cx="100" cy="8" r="2.5" fill="#f5d468" />
+            <circle cx="65" cy="18" r="2" fill="#f5d468" />
+            <circle cx="135" cy="18" r="2" fill="#f5d468" />
+            <!-- Pen Nib -->
+            <path d="M93 44H107L105 60L100 76L95 60L93 44Z" fill="#ffffff" />
+            <circle cx="100" cy="58" r="1.5" fill="#070d19" />
+            <line x1="100" y1="59.5" x2="100" y2="76" stroke="#070d19" stroke-width="1" />
+            <!-- Book -->
+            <path d="M96 74C72 66 45 62 34 67L31 90C43 85 73 80 96 86V74Z" fill="#d4af37" />
+            <path d="M104 74C128 66 155 62 166 67L169 90C157 85 127 80 104 86V74Z" fill="#d4af37" />
+            <path d="M96 79C75 73 50 71 41 75L38 97C50 93 76 89 96 94V79Z" fill="#f5d468" />
+            <path d="M104 79C125 73 150 71 159 75L162 97C150 93 124 89 104 94V79Z" fill="#f5d468" />
+            <path d="M28 95C52 91 82 89 100 101C118 89 148 91 172 95L169 100C145 95 117 94 100 107C83 94 55 95 31 100L28 95Z" fill="#38bdf8" />
+          </svg>
+          <div>
+            <span class="font-serif font-bold text-lg text-white tracking-wider block">
+              SIAK <span class="text-[#d4af37]">PUBLISHER</span>
+            </span>
+            <p class="text-[10px] text-slate-400 tracking-wide">Mengabadikan Karya, Merawat Peradaban</p>
+          </div>
+        </a>
+
+        <!-- Menu Navigasi Desktop -->
+        <nav class="hidden md:flex items-center gap-7 text-sm font-medium text-slate-300">
+          <a href="#beranda" class="text-[#d4af37]">Beranda</a>
+          <a href="#katalog" class="hover:text-white transition-colors">Katalog Buku</a>
+          <a href="#kategori" class="hover:text-white transition-colors">Kategori</a>
+          <a href="#layanan-naskah" class="hover:text-white transition-colors">Layanan Naskah</a>
+          <a href="#tentang-kami" class="hover:text-white transition-colors">Tentang Kami</a>
+          <a href="#kontak" class="hover:text-white transition-colors">Kontak</a>
+        </nav>
+
+        <!-- Tombol Aksi Cepat Kirim Naskah -->
+        <div class="flex items-center gap-3">
+          <a href="#layanan-naskah" class="px-4 py-2 rounded-lg bg-gradient-to-r from-[#d4af37] to-[#b8860b] text-[#091122] font-bold text-xs sm:text-sm hover:brightness-110 shadow-sm transition-all">
+            Kirim Naskah
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ================================================================= -->
+  <!-- 3. BANNER UTAMA (HERO SECTION): BUKU RILIS TERBARU & PROMO       -->
+  <!-- ================================================================= -->
+  <section id="beranda" class="relative py-16 sm:py-24 bg-gradient-to-b from-[#091122] via-[#0b162c] to-[#070d19] border-b border-[#1b2a4a]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        <!-- Kolom Teks Promosi & Tagline -->
+        <div class="lg:col-span-7 space-y-6">
+          <div class="inline-block px-3 py-1.5 rounded-full bg-[#122244] border border-[#233a69] text-xs font-semibold text-[#fef08a] uppercase tracking-wider">
+            ✦ Rilisan Baru Pilihan Redaksi 2026
+          </div>
+          <h1 class="text-3xl sm:text-5xl font-serif font-extrabold text-white leading-tight">
+            Mengabadikan Karya,<br>
+            <span class="text-[#d4af37]">Merawat Peradaban.</span>
+          </h1>
+          <p class="text-slate-300 text-base sm:text-lg leading-relaxed font-light">
+            Selamat datang di <strong>SIAK PUBLISHER</strong>. Rumah penerbitan buku berkualitas yang mendampingi penulis, akademisi, dan sastrawan nusantara melahirkan karya ber-ISBN resmi Perpustakaan Nasional RI dengan standar tata letak estetik dan cetak prima.
+          </p>
+          <div class="flex flex-wrap gap-4 pt-2">
+            <a href="https://wa.me/6285271219108?text=Halo%20SIAK%20PUBLISHER,%20saya%20tertarik%20membeli%20buku%20rilisan%20terbaru." target="_blank" class="px-6 py-3.5 rounded-xl bg-gradient-to-r from-[#d4af37] to-[#b8860b] text-[#091122] font-bold text-sm hover:brightness-110 shadow-lg transition-all">
+              Beli Sekarang via WhatsApp
+            </a>
+            <a href="#katalog" class="px-6 py-3.5 rounded-xl bg-[#0f1e3c] border border-[#243c6b] text-slate-200 font-semibold text-sm hover:bg-[#162a53] transition-all">
+              Pelajari Lebih Lanjut
+            </a>
+          </div>
+        </div>
+
+        <!-- Kolom Kartu Cover Buku Rilis Terbaru -->
+        <div class="lg:col-span-5 flex justify-center">
+          <div class="bg-[#0d1830] border border-[#223963] rounded-2xl p-6 shadow-2xl max-w-sm w-full">
+            <div class="text-xs text-[#d4af37] font-semibold uppercase mb-3 flex items-center justify-between">
+              <span>Buku Unggulan Minggu Ini</span>
+              <span class="text-slate-400 font-mono">Tahun 2026</span>
+            </div>
+            <!-- Placeholder Cover Menarik -->
+            <div class="aspect-[3/4] bg-gradient-to-br from-[#122347] to-[#071022] rounded-lg border border-[#223963] mb-4 flex flex-col items-center justify-center p-6 text-center relative shadow-inner">
+              <span class="text-xs text-[#d4af37] font-mono tracking-wider">SEJARAH & KEBUDAYAAN</span>
+              <h3 class="font-serif font-bold text-xl text-white mt-3">Mutiara Sungai Jantan</h3>
+              <p class="text-xs text-slate-300 mt-1 italic">Kilau Sejarah Siak Sri Indrapura</p>
+              <div class="mt-4 pt-4 border-t border-[#1e3258] text-[11px] text-slate-400">
+                Dr. Mahadir Ahmad, M.Hum
+              </div>
+            </div>
+            <div class="flex items-center justify-between pt-2">
+              <div>
+                <span class="text-[10px] text-slate-400 block uppercase">Harga Resmi</span>
+                <span class="text-xl font-bold font-mono text-[#fef08a]">Rp 125.000</span>
+              </div>
+              <a href="https://wa.me/6285271219108?text=Halo%20SIAK%20PUBLISHER,%20saya%20pesan%20buku%20Mutiara%20Sungai%20Jantan" target="_blank" class="px-4 py-2 rounded-lg bg-[#d4af37] text-[#091122] font-bold text-xs hover:bg-[#e5c158] transition-colors">
+                Pesan Buku
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================================= -->
+  <!-- 4. BAGIAN BUKU UNGGULAN (BESTSELLERS / FEATURED BOOKS)           -->
+  <!-- ================================================================= -->
+  <section id="katalog" class="py-16 sm:py-24 bg-[#070d19]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+      <!-- Judul Bagian -->
+      <div class="text-center max-w-2xl mx-auto mb-14 space-y-2">
+        <span class="text-[#d4af37] text-xs font-semibold uppercase tracking-wider block">Karya Terpopuler</span>
+        <h2 class="text-2xl sm:text-4xl font-serif font-bold text-white">Buku Unggulan Penerbit</h2>
+        <p class="text-slate-400 text-sm font-light">Pilihan pembaca dengan kualitas naskah bermutu dan legalitas ISBN resmi.</p>
+      </div>
+
+      <!-- Grid 4-6 Cover Buku Populer -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+        
+        <!-- Buku 1: Sejarah Melayu -->
+        <div class="bg-[#0b1426] border border-[#1b2a4a] hover:border-[#d4af37]/60 rounded-xl p-5 shadow-lg flex flex-col justify-between transition-all">
+          <div>
+            <div class="aspect-[3/4] bg-gradient-to-br from-[#122347] to-[#0a1426] rounded border border-[#1e2f52] mb-4 flex flex-col items-center justify-center p-4 text-center">
+              <span class="text-[10px] text-[#d4af37] font-semibold">SEJARAH & ADAT</span>
+              <h4 class="font-serif font-bold text-lg text-white mt-2">Tunjuk Ajar & Adat Melayu</h4>
+              <p class="text-xs text-slate-300 mt-1">Petuah Luhur Sepanjang Zaman</p>
+              <span class="text-[11px] text-slate-500 mt-2">H. Al-Azhar Iskandar</span>
+            </div>
+            <div class="text-[11px] text-[#d4af37] mb-1">Sejarah & Kebudayaan · 420 Hal</div>
+            <h3 class="font-serif font-bold text-white text-base">Tunjuk Ajar & Adat Melayu</h3>
+            <p class="text-xs text-slate-300 mt-0.5">Penulis: H. Al-Azhar Iskandar</p>
+          </div>
+          <div class="flex items-center justify-between pt-4 mt-4 border-t border-[#182847]">
+            <span class="font-bold font-mono text-[#fef08a] text-base">Rp 140.000</span>
+            <a href="https://wa.me/6285271219108?text=Halo%20saya%20pesan%20buku%20Tunjuk%20Ajar%20Melayu" target="_blank" class="px-3 py-1.5 bg-[#d4af37] text-[#091122] rounded text-xs font-bold hover:bg-[#e5c158]">
+              Detail & Pesan
+            </a>
+          </div>
+        </div>
+
+        <!-- Buku 2: Novel Sastra -->
+        <div class="bg-[#0b1426] border border-[#1b2a4a] hover:border-[#d4af37]/60 rounded-xl p-5 shadow-lg flex flex-col justify-between transition-all">
+          <div>
+            <div class="aspect-[3/4] bg-gradient-to-br from-[#16274e] to-[#0a1426] rounded border border-[#1e2f52] mb-4 flex flex-col items-center justify-center p-4 text-center">
+              <span class="text-[10px] text-[#d4af37] font-semibold">SASTRA NUSANTARA</span>
+              <h4 class="font-serif font-bold text-lg text-white mt-2">Nyanyian Hilir</h4>
+              <p class="text-xs text-slate-300 mt-1">Roman Tepian Batang Siak</p>
+              <span class="text-[11px] text-slate-500 mt-2">Ratih Kumala Dewi</span>
+            </div>
+            <div class="text-[11px] text-[#d4af37] mb-1">Fiksi & Sastra · 260 Hal</div>
+            <h3 class="font-serif font-bold text-white text-base">Nyanyian Hilir</h3>
+            <p class="text-xs text-slate-300 mt-0.5">Penulis: Ratih Kumala Dewi</p>
+          </div>
+          <div class="flex items-center justify-between pt-4 mt-4 border-t border-[#182847]">
+            <span class="font-bold font-mono text-[#fef08a] text-base">Rp 88.000</span>
+            <a href="https://wa.me/6285271219108?text=Halo%20saya%20pesan%20buku%20Nyanyian%20Hilir" target="_blank" class="px-3 py-1.5 bg-[#d4af37] text-[#091122] rounded text-xs font-bold hover:bg-[#e5c158]">
+              Detail & Pesan
+            </a>
+          </div>
+        </div>
+
+        <!-- Buku 3: Pendidikan Karakter -->
+        <div class="bg-[#0b1426] border border-[#1b2a4a] hover:border-[#d4af37]/60 rounded-xl p-5 shadow-lg flex flex-col justify-between transition-all">
+          <div>
+            <div class="aspect-[3/4] bg-gradient-to-br from-[#122842] to-[#0a1426] rounded border border-[#1e2f52] mb-4 flex flex-col items-center justify-center p-4 text-center">
+              <span class="text-[10px] text-[#d4af37] font-semibold">PENDIDIKAN GURU</span>
+              <h4 class="font-serif font-bold text-lg text-white mt-2">Pendidikan Berakar Nilai</h4>
+              <p class="text-xs text-slate-300 mt-1">Paradigma Guru Masa Depan</p>
+              <span class="text-[11px] text-slate-500 mt-2">Prof. Dr. Zulkifli Mansur, M.Pd</span>
+            </div>
+            <div class="text-[11px] text-[#d4af37] mb-1">Pendidikan · 312 Hal</div>
+            <h3 class="font-serif font-bold text-white text-base">Pendidikan Berakar Nilai</h3>
+            <p class="text-xs text-slate-300 mt-0.5">Penulis: Prof. Dr. Zulkifli Mansur</p>
+          </div>
+          <div class="flex items-center justify-between pt-4 mt-4 border-t border-[#182847]">
+            <span class="font-bold font-mono text-[#fef08a] text-base">Rp 98.000</span>
+            <a href="https://wa.me/6285271219108?text=Halo%20saya%20pesan%20buku%20Pendidikan%20Berakar%20Nilai" target="_blank" class="px-3 py-1.5 bg-[#d4af37] text-[#091122] rounded text-xs font-bold hover:bg-[#e5c158]">
+              Detail & Pesan
+            </a>
+          </div>
+        </div>
+
+        <!-- Buku 4: Non-Fiksi Biografi -->
+        <div class="bg-[#0b1426] border border-[#1b2a4a] hover:border-[#d4af37]/60 rounded-xl p-5 shadow-lg flex flex-col justify-between transition-all">
+          <div>
+            <div class="aspect-[3/4] bg-gradient-to-br from-[#18223c] to-[#0a1426] rounded border border-[#1e2f52] mb-4 flex flex-col items-center justify-center p-4 text-center">
+              <span class="text-[10px] text-[#d4af37] font-semibold">BIOGRAFI & SEJARAH</span>
+              <h4 class="font-serif font-bold text-lg text-white mt-2">Cahaya Istana Kuning</h4>
+              <p class="text-xs text-slate-300 mt-1">Jejak Tokoh Perempuan Siak</p>
+              <span class="text-[11px] text-slate-500 mt-2">Tengku Syarifah Nurhaliza</span>
+            </div>
+            <div class="text-[11px] text-[#d4af37] mb-1">Non-Fiksi · 288 Hal</div>
+            <h3 class="font-serif font-bold text-white text-base">Cahaya dari Istana Kuning</h3>
+            <p class="text-xs text-slate-300 mt-0.5">Penulis: Tengku Syarifah Nurhaliza</p>
+          </div>
+          <div class="flex items-center justify-between pt-4 mt-4 border-t border-[#182847]">
+            <span class="font-bold font-mono text-[#fef08a] text-base">Rp 110.000</span>
+            <a href="https://wa.me/6285271219108?text=Halo%20saya%20pesan%20buku%20Cahaya%20Istana%20Kuning" target="_blank" class="px-3 py-1.5 bg-[#d4af37] text-[#091122] rounded text-xs font-bold hover:bg-[#e5c158]">
+              Detail & Pesan
+            </a>
+          </div>
+        </div>
+
+        <!-- Buku 5: Cerita Anak & Remaja -->
+        <div class="bg-[#0b1426] border border-[#1b2a4a] hover:border-[#d4af37]/60 rounded-xl p-5 shadow-lg flex flex-col justify-between transition-all">
+          <div>
+            <div class="aspect-[3/4] bg-gradient-to-br from-[#1b263b] to-[#0a1426] rounded border border-[#1e2f52] mb-4 flex flex-col items-center justify-center p-4 text-center">
+              <span class="text-[10px] text-[#d4af37] font-semibold">ANAK & EDUKASI</span>
+              <h4 class="font-serif font-bold text-lg text-white mt-2">Kembara Si Kancil</h4>
+              <p class="text-xs text-slate-300 mt-1">Di Belantara Rimbang</p>
+              <span class="text-[11px] text-slate-500 mt-2">Nurul Hidayati</span>
+            </div>
+            <div class="text-[11px] text-[#d4af37] mb-1">Anak & Remaja · 96 Hal (Warna)</div>
+            <h3 class="font-serif font-bold text-white text-base">Kembara Si Kancil</h3>
+            <p class="text-xs text-slate-300 mt-0.5">Penulis: Nurul Hidayati</p>
+          </div>
+          <div class="flex items-center justify-between pt-4 mt-4 border-t border-[#182847]">
+            <span class="font-bold font-mono text-[#fef08a] text-base">Rp 65.000</span>
+            <a href="https://wa.me/6285271219108?text=Halo%20saya%20pesan%20buku%20Kembara%20Si%20Kancil" target="_blank" class="px-3 py-1.5 bg-[#d4af37] text-[#091122] rounded text-xs font-bold hover:bg-[#e5c158]">
+              Detail & Pesan
+            </a>
+          </div>
+        </div>
+
+        <!-- Buku 6: Antologi Puisi -->
+        <div class="bg-[#0b1426] border border-[#1b2a4a] hover:border-[#d4af37]/60 rounded-xl p-5 shadow-lg flex flex-col justify-between transition-all">
+          <div>
+            <div class="aspect-[3/4] bg-gradient-to-br from-[#142340] to-[#0a1426] rounded border border-[#1e2f52] mb-4 flex flex-col items-center justify-center p-4 text-center">
+              <span class="text-[10px] text-[#d4af37] font-semibold">ANTOLOGI PUISI</span>
+              <h4 class="font-serif font-bold text-lg text-white mt-2">Bisik Hujan di Batang Siak</h4>
+              <p class="text-xs text-slate-300 mt-1">Kumpulan 80 Puisi Renungan</p>
+              <span class="text-[11px] text-slate-500 mt-2">Wan Ahmad Fadli</span>
+            </div>
+            <div class="text-[11px] text-[#d4af37] mb-1">Sastra & Puisi · 164 Hal</div>
+            <h3 class="font-serif font-bold text-white text-base">Bisik Hujan di Batang Siak</h3>
+            <p class="text-xs text-slate-300 mt-0.5">Penulis: Wan Ahmad Fadli</p>
+          </div>
+          <div class="flex items-center justify-between pt-4 mt-4 border-t border-[#182847]">
+            <span class="font-bold font-mono text-[#fef08a] text-base">Rp 72.000</span>
+            <a href="https://wa.me/6285271219108?text=Halo%20saya%20pesan%20buku%20Bisik%20Hujan%20di%20Batang%20Siak" target="_blank" class="px-3 py-1.5 bg-[#d4af37] text-[#091122] rounded text-xs font-bold hover:bg-[#e5c158]">
+              Detail & Pesan
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================================= -->
+  <!-- 5. BAGIAN KATEGORI / GENRE BUKU                                   -->
+  <!-- ================================================================= -->
+  <section id="kategori" class="py-16 sm:py-20 bg-[#091122] border-t border-b border-[#1b2a4a]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+      <div class="text-center mb-12">
+        <span class="text-[#d4af37] text-xs font-semibold uppercase tracking-wider block">Klasifikasi Minat Baca</span>
+        <h2 class="text-2xl sm:text-3xl font-serif font-bold text-white">Kategori & Genre Buku</h2>
+        <p class="text-slate-400 text-xs sm:text-sm mt-1">Pilih cabang ilmu dan sastra yang Anda minati</p>
+      </div>
+
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+        <a href="#katalog" class="p-5 bg-[#0c162c] hover:bg-[#101d3a] border border-[#1e2f52] hover:border-[#d4af37] rounded-xl text-center transition-all group">
+          <div class="text-3xl mb-2">📜</div>
+          <h4 class="font-bold text-white text-sm group-hover:text-[#d4af37]">Sejarah & Melayu</h4>
+          <span class="text-[11px] text-slate-400">Warisan Kesultanan Siak</span>
+        </a>
+        <a href="#katalog" class="p-5 bg-[#0c162c] hover:bg-[#101d3a] border border-[#1e2f52] hover:border-[#d4af37] rounded-xl text-center transition-all group">
+          <div class="text-3xl mb-2">✍️</div>
+          <h4 class="font-bold text-white text-sm group-hover:text-[#d4af37]">Fiksi & Sastra</h4>
+          <span class="text-[11px] text-slate-400">Novel, Puisi, Cerpen</span>
+        </a>
+        <a href="#katalog" class="p-5 bg-[#0c162c] hover:bg-[#101d3a] border border-[#1e2f52] hover:border-[#d4af37] rounded-xl text-center transition-all group">
+          <div class="text-3xl mb-2">🎓</div>
+          <h4 class="font-bold text-white text-sm group-hover:text-[#d4af37]">Pendidikan</h4>
+          <span class="text-[11px] text-slate-400">Buku Teks & Monograf Dosen</span>
+        </a>
+        <a href="#katalog" class="p-5 bg-[#0c162c] hover:bg-[#101d3a] border border-[#1e2f52] hover:border-[#d4af37] rounded-xl text-center transition-all group">
+          <div class="text-3xl mb-2">✨</div>
+          <h4 class="font-bold text-white text-sm group-hover:text-[#d4af37]">Anak & Remaja</h4>
+          <span class="text-[11px] text-slate-400">Cerita Dongeng & Karakter</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================================= -->
+  <!-- 6. LAYANAN & PENGIRIMAN NASKAH PENULIS                           -->
+  <!-- ================================================================= -->
+  <section id="layanan-naskah" class="py-16 sm:py-20 bg-[#070d19]">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6">
+      <div class="text-center mb-10 space-y-2">
+        <span class="text-[#d4af37] text-xs font-semibold uppercase tracking-wider block">Penerbitan Naskah Resmi</span>
+        <h2 class="text-2xl sm:text-3xl font-serif font-bold text-white">Layanan Kirim Naskah</h2>
+        <p class="text-slate-300 text-xs sm:text-sm font-light">
+          Syarat: Karya orisinal, format Microsoft Word/PDF, sertakan sinopsis dan kontak penulis.
+        </p>
+      </div>
+
+      <div class="bg-[#0b1426] border border-[#1b2a4a] rounded-2xl p-6 sm:p-8 space-y-6 shadow-xl">
+        <div class="space-y-2">
+          <h3 class="font-serif font-bold text-lg text-white">Kirim Naskah Anda ke Meja Redaksi</h3>
+          <p class="text-xs text-slate-400 leading-relaxed">
+            Tim redaksi SIAK PUBLISHER siap menyunting, menguruskan ISBN resmi Perpustakaan Nasional RI, menata letak, dan mendesain cover terbaik untuk karya Anda.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+          <a href="mailto:siakpublisher@gmail.com?subject=Pengajuan%20Naskah%20Buku" class="py-3 px-4 rounded-xl bg-[#14264a] text-center text-xs font-semibold text-slate-200 hover:text-white border border-[#233a69] hover:bg-[#1b3363] transition-all">
+            ✉️ Kirim via Email: siakpublisher@gmail.com
+          </a>
+          <a href="https://wa.me/6285271219108?text=Halo%20SIAK%20PUBLISHER,%20saya%20ingin%20mengirimkan%20naskah%20buku." target="_blank" class="py-3 px-4 rounded-xl bg-gradient-to-r from-[#d4af37] to-[#b8860b] text-[#091122] text-center text-xs font-bold hover:brightness-110 transition-all shadow-md">
+            📱 Kirim via WhatsApp: 085271219108
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================================= -->
+  <!-- 7. TENTANG KAMI SINGKAT                                           -->
+  <!-- ================================================================= -->
+  <section id="tentang-kami" class="py-16 bg-[#091122] border-t border-[#1b2a4a]">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 text-center space-y-4">
+      <span class="text-[#d4af37] text-xs font-semibold uppercase tracking-wider block">Mengenal Penerbit</span>
+      <h2 class="text-2xl sm:text-3xl font-serif font-bold text-white">Tentang SIAK PUBLISHER</h2>
+      <p class="text-slate-300 text-sm leading-relaxed font-light">
+        Berangkat dari semangat kecerdasan budaya Siak Sri Indrapura, kami mendedikasikan diri untuk merawat naskah-naskah berharga agar menjadi warisan peradaban yang terus menyala. Visi kami adalah menjadi rumah penerbitan tepercaya dengan mutu tata cetak berkelas dan distribusi luas.
+      </p>
+    </div>
+  </section>
+
+  <!-- ================================================================= -->
+  <!-- 8. FOOTER: KONTAK LENGKAP, ALAMAT, NEWSLETTER, & HAK CIPTA       -->
+  <!-- ================================================================= -->
+  <footer id="kontak" class="bg-[#050a14] border-t border-[#1b2a4a] pt-14 pb-8 text-xs text-slate-400">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 grid grid-cols-1 md:grid-cols-4 gap-8 mb-10">
+      
+      <!-- Profil Footer -->
+      <div class="space-y-3">
+        <h3 class="font-serif font-bold text-white text-base">SIAK PUBLISHER</h3>
+        <p class="text-slate-400 italic">"Mengabadikan Karya, Merawat Peradaban"</p>
+        <p class="text-slate-500">Penerbitan buku ber-ISBN resmi Perpustakaan Nasional RI.</p>
+      </div>
+
+      <!-- Tautan Navigasi -->
+      <div class="space-y-2">
+        <h4 class="font-bold text-white">Navigasi Halaman</h4>
+        <ul class="space-y-1.5">
+          <li><a href="#beranda" class="hover:text-[#d4af37]">Beranda</a></li>
+          <li><a href="#katalog" class="hover:text-[#d4af37]">Katalog Buku</a></li>
+          <li><a href="#kategori" class="hover:text-[#d4af37]">Kategori Genre</a></li>
+          <li><a href="#layanan-naskah" class="hover:text-[#d4af37]">Kirim Naskah</a></li>
+          <li><a href="#tentang-kami" class="hover:text-[#d4af37]">Tentang Kami</a></li>
+        </ul>
+      </div>
+
+      <!-- Info Kontak Utama -->
+      <div class="space-y-2">
+        <h4 class="font-bold text-white">Kontak Resmi</h4>
+        <p>WhatsApp / HP: <a href="https://wa.me/6285271219108" class="text-white hover:text-[#d4af37] font-semibold">085271219108</a></p>
+        <p>Email: <a href="mailto:siakpublisher@gmail.com" class="text-white hover:text-[#d4af37]">siakpublisher@gmail.com</a></p>
+        <p>Alamat: Jl. Sultan Syarif Kasim No. 45, Siak Sri Indrapura, Kabupaten Siak, Riau</p>
+      </div>
+
+      <!-- Newsletter -->
+      <div class="space-y-2">
+        <h4 class="font-bold text-white">Berlangganan Warta Pustaka</h4>
+        <p class="text-slate-500">Dapatkan informasi katalog buku terbitan baru dan promo diskon.</p>
+        <form onsubmit="event.preventDefault(); alert('Terima kasih telah berlangganan newsletter SIAK PUBLISHER!');" class="space-y-2">
+          <input type="email" placeholder="Masukkan email Anda" required class="w-full px-3 py-2 bg-[#0a1224] border border-[#1e2f52] rounded text-slate-200 text-xs focus:outline-none focus:border-[#d4af37]" />
+          <button type="submit" class="w-full py-2 bg-[#d4af37] text-[#091122] font-bold rounded text-xs hover:bg-[#e5c158]">
+            Berlangganan
+          </button>
+        </form>
+      </div>
+
+    </div>
+
+    <!-- Baris Hak Cipta -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 pt-6 border-t border-[#142345] flex flex-col sm:flex-row items-center justify-between gap-2 text-slate-500">
+      <p>&copy; 2026 SIAK PUBLISHER. Seluruh Hak Cipta Dilindungi Undang-Undang.</p>
+      <div class="flex items-center gap-4 text-[11px]">
+        <a href="#tentang-kami" class="hover:text-slate-400">Kebijakan Privasi</a>
+        <span>·</span>
+        <a href="#layanan-naskah" class="hover:text-slate-400">Ketentuan Layanan</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

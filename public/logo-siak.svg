@@ -1,0 +1,34 @@
+<svg viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- CROWN -->
+  <g id="crown">
+    <rect x="150" y="76" width="100" height="8" rx="2" fill="#c6922b"/>
+    <path d="M140 72L130 36L170 56L200 16L230 56L270 36L260 72H140Z" fill="#c6922b"/>
+    <path d="M164 68L200 32L236 68H164Z" fill="#ffffff"/>
+    <path d="M200 40L216 64H184L200 40Z" fill="#dfa938"/>
+    <circle cx="200" cy="16" r="5" fill="#dfa938"/>
+    <circle cx="130" cy="36" r="4" fill="#dfa938"/>
+    <circle cx="270" cy="36" r="4" fill="#dfa938"/>
+  </g>
+
+  <!-- FOUNTAIN PEN NIB -->
+  <g id="pen-nib">
+    <path d="M186 88H214L210 120L200 152L190 120L186 88Z" fill="#0a2540"/>
+    <circle cx="200" cy="116" r="3" fill="#ffffff"/>
+    <line x1="200" y1="119" x2="200" y2="152" stroke="#ffffff" stroke-width="2"/>
+  </g>
+
+  <!-- OPEN BOOK -->
+  <g id="book">
+    <path d="M192 148C144 132 90 124 68 134L62 180C86 170 146 160 192 172V148Z" fill="#c6922b"/>
+    <path d="M208 148C256 132 310 124 332 134L338 180C314 170 254 160 208 172V148Z" fill="#c6922b"/>
+    <path d="M192 158C150 146 100 142 82 150L76 194C100 186 152 178 192 188V158Z" fill="#dfa938"/>
+    <path d="M208 158C250 146 300 142 318 150L324 194C300 186 248 178 208 188V158Z" fill="#dfa938"/>
+    <path d="M56 190C104 182 164 178 200 202C236 178 296 182 344 190L338 200C290 190 234 188 200 214C166 188 110 190 62 200L56 190Z" fill="#0a2540"/>
+  </g>
+
+  <!-- WORDMARK: SIAK PUBLISHER -->
+  <g id="wordmark">
+    <text x="200" y="260" font-family="'Times New Roman', Georgia, serif" font-size="44" font-weight="bold" fill="#0a2540" text-anchor="middle" letter-spacing="4">SIAK</text>
+    <text x="200" y="285" font-family="'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="bold" fill="#0a2540" text-anchor="middle" letter-spacing="8">PUBLISHER</text>
+  </g>
+</svg>

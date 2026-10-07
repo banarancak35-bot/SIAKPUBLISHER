@@ -1,0 +1,6 @@
+{
+  "name": "SIAK PUBLISHER - Mengabadikan Karya, Merawat Peradaban",
+  "description": "Website resmi penerbit buku SIAK PUBLISHER. Layanan penerbitan naskah berkualitas, katalog buku fiksi, non-fiksi, pendidikan, dan sastra ber-ISBN resmi.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
